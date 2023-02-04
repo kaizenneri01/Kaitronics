@@ -2,17 +2,14 @@ import React from "react";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 import { createGlobalStyle } from "styled-components";
+import { Outlet } from "react-router-dom";
 
-type props = {
-  children: React.ReactNode;
-};
-
-const Layout = ({ children }: props) => {
+const Layout = () => {
   return (
     <>
       <GlobalStyle />
       <NavBar />
-      {children}
+      <Outlet />
       <Footer />
     </>
   );

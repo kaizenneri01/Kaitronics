@@ -32,6 +32,7 @@ const NavBar = () => {
             />
           </DDIcon>
           <DDList>
+            <DDItem>home</DDItem>
             <DDItem>shop</DDItem>
             <DDItem>Services</DDItem>
             <DDItem>Promo</DDItem>
@@ -45,7 +46,10 @@ const NavBar = () => {
       <NavGroup>
         <NavList>
           <NavItem>
-            <Link to={`shop`}>shop</Link>
+            <Link to={"/"}>home</Link>
+          </NavItem>
+          <NavItem>
+            <Link to={"/shop"}>shop</Link>
           </NavItem>
           <NavItem>Services</NavItem>
           <NavItem>Promo</NavItem>
